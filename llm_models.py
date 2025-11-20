@@ -11,9 +11,9 @@ parser.add_argument("--provider",
                     choices=["OpenAI", "Google", "Anthropic", "xAI"],
                     help="LLM provider to query")
 parser.add_argument("--region",
-                    help="Region to use with Google Vertex AI API (requires --use-vertexai)")
-parser.add_argument("--use-vertexai", action="store_true",
-                    help="Use Vertex AI API instead of Gemini API (only for Google provider, requires GOOGLE_CLOUD_PROJECT)")
+                    help="Region to use with Google Vertex AI API (requires --vertexai)")
+parser.add_argument("--vertexai", action="store_true",
+                    help="Use Google Vertex AI API instead of Gemini API (requires GOOGLE_CLOUD_PROJECT)")
 args = parser.parse_args()
 
 def list_openai_models():
@@ -58,7 +58,7 @@ def list_google_models():
     if args.region is None:
         args.region = "us-central1"
 
-    if args.use_vertexai:
+    if args.vertexai:
         # Use Vertex AI API with regional endpoints
         project = os.getenv("GOOGLE_CLOUD_PROJECT")
         if not project:
@@ -87,7 +87,7 @@ def list_google_models():
 
         client = genai.Client(api_key=api_key)
 
-    if args.use_vertexai:
+    if args.vertexai:
         print(f"Listing available models in {args.region}...")
     else:
         print(f"Listing available models in auto-selected region...")
