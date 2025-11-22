@@ -1,4 +1,4 @@
-# alpaca
+# llm_models
 
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -9,8 +9,8 @@ A simple command-line tool to list available LLM models from various providers (
 
 1. Clone the repository:
 ```bash
-$ git clone git@github.com:ljbuturovic/alpaca.git
-$ cd alpaca
+$ git clone git@github.com:ljbuturovic/llm_models.git
+$ cd llm_models
 ```
 
 2. Create a virtual environment:
