@@ -6,19 +6,19 @@ A simple command-line tool to list available LLM models from various providers (
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:ljbuturovic/alpaca.git
-cd alpaca
+$ git clone git@github.com:ljbuturovic/alpaca.git
+$ cd alpaca
 ```
 
 2. Create a virtual environment:
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+$ python3 -m venv venv
+$ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ## Usage
@@ -38,22 +38,22 @@ List OpenAI models:
 
 List Google models using Gemini API:
 ```bash
-./llm_models.py --provider Google
+$ ./llm_models.py --provider Google
 ```
 
 List Google models using Vertex AI API (with regional endpoint):
 ```bash
-./llm_models.py --provider Google --vertexai --region us-central1
+$ ./llm_models.py --provider Google --vertexai --region us-central1
 ```
 
 List Anthropic models:
 ```bash
-./llm_models.py --provider Anthropic
+$ ./llm_models.py --provider Anthropic
 ```
 
 List xAI models:
 ```bash
-./llm_models.py --provider xAI
+$ ./llm_models.py --provider xAI
 ```
 
 ## Requirements
