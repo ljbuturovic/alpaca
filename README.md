@@ -6,7 +6,7 @@ A simple command-line tool to list available LLM models from various providers (
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ljbuturovic/alpaca.git
+git clone git@github.com:ljbuturovic/alpaca.git
 cd alpaca
 ```
 
