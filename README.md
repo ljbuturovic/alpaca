@@ -52,6 +52,13 @@ Model: gpt-3.5-turbo
 List Google models using Gemini API:
 ```bash
 $ ./llm_models.py --provider GoogleAI
+Listing available Google AI Studio models (auto-routed region)...
+================================================================================
+Model: models/embedding-gecko-001
+Model: models/gemini-2.5-pro-preview-03-25
+Model: models/gemini-2.5-flash
+Model: models/gemini-2.5-pro-preview-05-06
+Model: models/gemini-2.5-pro-preview-06-05
 ```
 
 List Google models using Vertex AI API (with regional endpoint):
