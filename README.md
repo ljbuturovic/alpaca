@@ -1,3 +1,5 @@
+# This repo is obsolete. Please use https://github.com/ljbuturovic/llm-models instead
+
 # llm_models
 
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
